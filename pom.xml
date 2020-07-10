@@ -46,9 +46,21 @@
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
-        </plugins>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
+        <scm>
+            <developerConnection>scm:git:git@github.com:AndreyTut/sfg-pet-clinic-study.git</developerConnection>
+        </scm>
 
 
 </project>
