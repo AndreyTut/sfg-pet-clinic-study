@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     @RequestMapping({"", "/", "index", "index.html"})
-    public String Ibdex() {
+    public String Index() {
         return "index";
+    }
+
+    @RequestMapping("/oups")
+    public String oops(){
+        return "notimplemented";
     }
 }
