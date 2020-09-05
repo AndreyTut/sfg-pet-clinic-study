@@ -81,7 +81,7 @@ class OwnerSDJpaServiceTest {
         owners.add(Owner.builder().id(2L).build());
         when(ownerRepository.findAll()).thenReturn(owners);
         Set<Owner> returnOwners = ownerService.findAll();
-        assertEquals(1, returnOwners.size());
+        assertEquals(2, returnOwners.size());
     }
 
     @Test
